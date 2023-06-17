@@ -10,6 +10,7 @@ import {
   MailOutlined,
   SettingOutlined,
   TabletOutlined,
+  AppstoreOutlined,
   FileTextOutlined,
 } from "@ant-design/icons";
 import { APP_PREFIX_PATH } from "configs/AppConfig";
@@ -103,6 +104,14 @@ const dashBoardNavTree = [
             submenu: [],
           },
         ],
+      },
+      {
+        key: "planner",
+        path: `${APP_PREFIX_PATH}/planner`,
+        title: "Планировщик",
+        icon: AppstoreOutlined,
+        breadcrumb: false,
+        submenu: [],
       },
       {
         key: "banners",
