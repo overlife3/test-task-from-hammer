@@ -34,7 +34,7 @@ const Planner = (state = initialState, action) => {
       return state;
     case CLEAR_TABLES:
       state = initialState;
-      return state;
+      return { ...state };
     case SET_TABLES:
       state.tables = action.payload;
       return { ...state };
