@@ -1,12 +1,14 @@
 import { combineReducers } from "redux";
 import Auth from "./Auth";
-import clients from "./Clients";
+import Clients from "./Clients";
+import Planner from "./Planner";
 import Theme from "./Theme";
 
 const reducers = combineReducers({
   theme: Theme,
   auth: Auth,
-  clients: clients,
+  clients: Clients,
+  planner: Planner,
 });
 
 export default reducers;

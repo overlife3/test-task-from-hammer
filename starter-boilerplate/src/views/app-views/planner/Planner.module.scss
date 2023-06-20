@@ -1,0 +1,22 @@
+.param_element {
+  .list {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .remove {
+    flex-basis: 100%;
+  }
+}
+
+.planner_menu {
+  .btns {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    & > * {
+      flex-basis: 100%;
+    }
+  }
+}

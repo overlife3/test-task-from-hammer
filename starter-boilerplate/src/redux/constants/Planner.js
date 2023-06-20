@@ -1,0 +1,6 @@
+export const ADD_TABLE = "ADD_TABLE";
+export const REMOVE_TABLE = "REMOVE_TABLE";
+export const SET_COORDINATE_TABLE = "SET_COORDINATE_TABLE";
+export const SET_ID_TARGET_TABLE = "SET_ID_TARGET_TABLE";
+export const CLEAR_TABLES = "CLEAR_TABLES";
+export const SET_TABLES = "SET_TABLES";
