@@ -13,6 +13,7 @@ import {
 } from "redux/actions/Planner";
 import { collectTable } from "components/shared-components/Planner/utils/collectTable";
 import { downloadJSONFile } from "components/shared-components/Planner/utils/downloadJSONFile";
+import PropTypes from "prop-types";
 
 const Block = ({ block }) => {
   const { imgId, title } = block;
@@ -175,6 +176,21 @@ const Planner = () => {
       </Col>
     </Row>
   );
+};
+
+const tableShape = PropTypes.shape({
+  imgId: PropTypes.number,
+  title: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
+});
+
+Block.propTypes = {
+  block: tableShape,
+};
+
+BlockList.propTypes = {
+  data: PropTypes.arrayOf(tableShape),
 };
 
 export default Planner;
